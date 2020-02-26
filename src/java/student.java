@@ -1,13 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+public class Student {
+    private Integer id;
+    private String name;
+    private String email;
 
-/**
- *
- * @author sath_
- */
-public class student {
-    
+
+    public void setId(Integer id){
+        this.id = id;
+    }
+    public Integer getId(){
+        return id;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setEmail(String name){
+        this.email = email;
+    }
+    public String getEmail(){
+        return email;
+    }
 }
