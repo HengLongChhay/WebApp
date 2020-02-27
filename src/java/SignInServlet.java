@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -23,8 +24,11 @@ public class SignInServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         DatabaseOperation dbo = new DatabaseOperation();
-        if(dbo.SignIn(email, password))
-            response.sendRedirect("ViewAllServlet");
+        if(dbo.SignIn(email, password)){
+            HttpSession session = request.getSession();
+            session.setAttribute("flag", true);
+            response.sendRedirect("ViewAllServlet");   
+        }
         else
             response.sendRedirect("signin.jsp");
     }

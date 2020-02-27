@@ -13,7 +13,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/9e424dc4b1.js" crossorigin="anonymous"></script>
-        <title>Assignment</title>
+        <link rel="shortcut icon" type="image/png" href="logokit.png">
+        <title>SRS</title>
         <style>
             html,body {
                 height: 100%;
@@ -25,13 +26,13 @@
         </style>
     </head>
     <body class="bg-info">
-        <div class="bg-white p-5 container h-100">
-            <h1 class="text-center m-5">Vignesh Classroom Management System</h1>
+        <div class="bg-white p-5 container my-5 rounded">
+            <h1 class="text-center m-5">Student Registration System</h1>
             <form  action="ViewAllServlet" method="post">
                 <div class="input-group mb-3">
                     <input name="username" type="text" class="form-control bg-light" placeholder="student name" aria-label="student name" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit" id="button-addon2">Search</button>
+                        <button class="btn btn-primary " type="submit" id="button-addon2">Search</button>
                     </div>
                 </div>
             </form>

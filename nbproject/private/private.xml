@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/phans/Documents/NetBeansProjects/Assignment/src/java/SearchServlet.java</file>
-            <file>file:/C:/Users/phans/Documents/NetBeansProjects/Assignment/src/java/ViewAllServlet.java</file>
-            <file>file:/C:/Users/phans/Documents/NetBeansProjects/Assignment/web/index.jsp</file>
-            <file>file:/C:/Users/phans/Documents/NetBeansProjects/Assignment/web/signin.jsp</file>
-            <file>file:/C:/Users/phans/Documents/NetBeansProjects/Assignment/src/java/DatabaseOperation.java</file>
-            <file>file:/C:/Users/phans/Documents/NetBeansProjects/Assignment/web/WEB-INF/web.xml</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/src/java/DatabaseOperation.java</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/src/java/SignInServlet.java</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/src/java/Authentication_Filter.java</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/web/WEB-INF/web.xml</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/web/index.jsp</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/web/Error.jsp</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/src/java/ViewAllServlet.java</file>
+            <file>file:/E:/hardisk/programming%20language/WebApp/web/signin.jsp</file>
         </group>
     </open-files>
 </project-private>

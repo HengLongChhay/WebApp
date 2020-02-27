@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <!-- Filter -->
+    <filter>
+        <filter-name>Authentication_Filter</filter-name>
+        <filter-class>Authentication_Filter</filter-class>
+    </filter>
+    <!-- End -->
     <!-- Servlet -->
     <servlet>
         <servlet-name>InsertServlet</servlet-name>
@@ -44,6 +50,13 @@
         <servlet-name>SignInServlet</servlet-name>
         <url-pattern>/SignInServlet</url-pattern>
     </servlet-mapping>
+    <filter-mapping>
+        <filter-name>Authentication_Filter</filter-name>
+        <url-pattern>/ViewAllServlet</url-pattern>
+        <url-pattern>/InsertServlet</url-pattern>
+        <url-pattern>/UpdateServlet</url-pattern>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </filter-mapping>
     <session-config>
         <session-timeout>
             30
