@@ -1,38 +1,31 @@
-import javax.servlet.RequestDispatcher;
+import DB.Student;
+import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.sql.SQLException;
 
-@WebServlet(name = "UpdateServlet")
 public class UpdateServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Integer user_id = Integer.parseInt(request.getParameter("user_id"));
-        Integer new_id = Integer.parseInt(request.getParameter("new_id"));
-        String new_username = request.getParameter("new_username");
-        String new_email = request.getParameter("new_email");
 
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String user_email = request.getParameter("user_email");
+        int user_id = Integer.parseInt(request.getParameter("userid"));
+        int oldUserId = Integer.parseInt(request.getParameter("oldUserId"));
         Student s = new Student();
-        s.setId(new_id);
-        s.setName(new_username);
-        s.setEmail(new_email);
-
-        DBoperations oper = new DBoperations();
-
-            Boolean success = oper.update(user_id, s);
-            if (success) {
-                response.sendRedirect("Update_Jsp.jsp");
-            }
-            else {
-                RequestDispatcher rd = request.getRequestDispatcher("Error.jsp");
-                rd.forward(request, response);
-            }
-
+        s.setId(user_id);
+        s.setName(username);
+        s.setEmail(user_email);
+        DatabaseOperation operation = new DatabaseOperation();
+        if(operation.update(oldUserId,s)){
+            System.out.println("ViewAll");
+            response.sendRedirect("ViewAllServlet");
+        }
+        else
+            response.sendRedirect("Error.jsp");
     }
 
-
 }
-
