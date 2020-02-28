@@ -23,7 +23,7 @@
 
           <!-- Icon -->
             <div class="fadeIn first">
-              <img src="logo.png" id="icon" alt="User Icon" />
+                <img class="m-5" src="Kitlogo.png" id="icon" alt="User Icon" />
             </div>
 
           <!-- Login Form -->

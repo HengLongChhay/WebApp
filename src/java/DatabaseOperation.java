@@ -12,13 +12,13 @@ import java.util.ArrayList;
 public class DatabaseOperation {
     
     private Connection connection = null;
-    private final String url = "jdbc:mysql://localhost:3306/kit";
+    private final String url = "jdbc:mysql://localhost:3306/kit?useSSL=false";
     private final String user = "root";
-    private final String password = "";
+    private final String password = "admin";
     
     private Connection getConnection(){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             if(connection == null)
             connection = DriverManager.getConnection(url, user, password);
         }catch(SQLException | ClassNotFoundException exception){

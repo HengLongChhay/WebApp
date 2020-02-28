@@ -72,7 +72,7 @@
                 </tbody>
             </table>
             <div class="col-lg-12 p-3">
-                <button class="btn-primary float-right btn-circle btn-lg" style="width:50px" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus-square"></i></button>
+                <button class="btn-primary float-right btn-circle btn-lg" data-toggle="modal" data-target="#exampleModal">Add</button>
             </div>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">

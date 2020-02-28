@@ -15,6 +15,6 @@
         </style>
     </head>
     <body style="background-image: url('error.jpg');">
-        <h1 style="text-align: center; font-size: 500%">Error!</h1>
+        <h1 style="text-align: center; font-size: 500%">Error 404!</h1>
     </body>
 </html>

@@ -15,8 +15,6 @@
         <servlet-name>ViewAllServlet</servlet-name>
         <servlet-class>ViewAllServlet</servlet-class>
     </servlet>
-    <!-- End -->
-    <!-- Servlet Mapping -->
     <servlet>
         <servlet-name>DeleteServlet</servlet-name>
         <servlet-class>DeleteServlet</servlet-class>
@@ -29,6 +27,8 @@
         <servlet-name>SignInServlet</servlet-name>
         <servlet-class>SignInServlet</servlet-class>
     </servlet>
+    <!-- End -->
+    <!-- Servlet Mapping -->
     <servlet-mapping>
         <servlet-name>InsertServlet</servlet-name>
         <url-pattern>/InsertServlet</url-pattern>
@@ -37,7 +37,6 @@
         <servlet-name>ViewAllServlet</servlet-name>
         <url-pattern>/ViewAllServlet</url-pattern>
     </servlet-mapping>
-    <!-- End -->
     <servlet-mapping>
         <servlet-name>DeleteServlet</servlet-name>
         <url-pattern>/DeleteServlet</url-pattern>
@@ -50,6 +49,8 @@
         <servlet-name>SignInServlet</servlet-name>
         <url-pattern>/SignInServlet</url-pattern>
     </servlet-mapping>
+    <!-- end -->
+    <!-- Filter Mapping -->
     <filter-mapping>
         <filter-name>Authentication_Filter</filter-name>
         <url-pattern>/ViewAllServlet</url-pattern>
@@ -57,6 +58,7 @@
         <url-pattern>/UpdateServlet</url-pattern>
         <url-pattern>/DeleteServlet</url-pattern>
     </filter-mapping>
+    <!-- end -->
     <session-config>
         <session-timeout>
             30
